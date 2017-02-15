@@ -1,0 +1,46 @@
+{
+  "name": "sup7even/image-cropper-configuration",
+  "type": "typo3-cms-extension",
+  "description": "Dynamic configuration for the image cropper",
+  "keywords": [
+    "TYPO3",
+    "extension"
+  ],
+  "homepage": "http://www.sup7even.digital/",
+  "support": {
+    "issues": "https://github.com/sup7even/image_cropper_configuration/issues"
+  },
+  "authors": [
+    {
+      "name": "Georg Ringer"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "require": {
+    "typo3/cms-core": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sup7even\\ImageCropperConfiguration\\": "Classes"
+    }
+  },
+  "replace": {
+    "image_cropper_configuration": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin",
+    "preferred-install": {
+      "typo3/cms": "source"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
